@@ -225,7 +225,95 @@
                     </div>
                 </div>
             </section>
+            <section class="faq">
+                <div class="container">
+                    <h2 class="faq-title">FAQ</h2>
+                    <div class="faq-item active">
+                        <div class="faq-question">What is Oz Lotto? <span class="icon">-</span></div>
+                        <div class="faq-answer" style="display: block;">Established in the heart of Australia. Buy your watch is a premium service committed to offering the most competitive rates for your luxury watches. We specialize in acquiring timepieces from renowned brands like Rolex.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How do I win Oz Lotto? <span class="icon">+</span></div>
+                        <div class="faq-answer" style="display: none;">You win Oz Lotto by matching your selected numbers with the drawn numbers. The more numbers you match, the bigger the prize.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Can I increase my chances of winning Oz Lotto? <span class="icon">+</span></div>
+                        <div class="faq-answer" style="display: none;">You can increase your chances by purchasing multiple tickets or joining a lottery syndicate.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What is a Standard Oz Lotto Ticket? <span class="icon">+</span></div>
+                        <div class="faq-answer" style="display: none;">A standard Oz Lotto ticket consists of a selection of numbers from the available range.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">When does Oz Lotto draw every Tuesday? <span class="icon">+</span></div>
+                        <div class="faq-answer" style="display: none;">Oz Lotto draws take place every Tuesday evening at a scheduled time.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How can I check Oz Lotto results? <span class="icon">+</span></div>
+                        <div class="faq-answer" style="display: none;">You can check Oz Lotto results on official websites, newspapers, or lottery retailers.</div>
+                    </div>
+                </div>
+            </section>
         </main>
+        <footer>
+            <div class="container">
+                <div class="brand-logos">
+                    <ul>
+                        <li>
+                            <a>
+                                <img src="images/18plus-icon.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/image 6.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/image 7.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/image 8.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/image 9.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-text">
+                    <p>Think! About your choices. Gamble Responsibly. Call Gambling Help on 1800 858 858.
+                        GambleAware We are committed to Responsible Gambling. Persons under 18 years of age are not permitted to gamble. </p>
+                </div>
+                <div class="footer-link">
+                    <ul>
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="privacy.html">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="terms.html">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="cookie.html">Cookie Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-copyright">
+                    <p>Copyright ©2025 | All directions are reserved.</p>
+                </div>
+            </div>
+        </footer>
 
 
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -281,6 +369,25 @@
         
             // Start the countdown
             startCountdown();
+        </script>
+        <script>
+            document.querySelectorAll('.faq-question').forEach(item => {
+                item.addEventListener('click', () => {
+                    document.querySelectorAll('.faq-item').forEach(faq => {
+                        faq.classList.remove('active');
+                        faq.querySelector('.faq-answer').style.display = 'none';
+                        faq.querySelector('.icon').textContent = '+';
+                    });
+                    
+                    let parent = item.parentElement;
+                    let answer = item.nextElementSibling;
+                    let icon = item.querySelector('.icon');
+                    
+                    parent.classList.add('active');
+                    answer.style.display = 'block';
+                    icon.textContent = '-';
+                });
+            });
         </script>
     </body>
 </html>
