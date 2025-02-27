@@ -537,11 +537,6 @@ footer{
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: none;
-    text-decoration-thickness: auto;
-    text-underline-offset: auto;
-    text-underline-position: from-font;
 }
 .footer-copyright > p{
     color: #000;
@@ -575,7 +570,7 @@ footer{
 .subpage-context > p{
     color: rgba(0, 0, 0, 0.80);
     text-align: justify;
-    font-size: 16px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
@@ -588,7 +583,7 @@ footer{
 .subpage-context > ul > li{
     color: rgba(0, 0, 0, 0.80);
     text-align: justify;
-    font-size: 16px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px; 
