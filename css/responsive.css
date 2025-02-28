@@ -3,7 +3,7 @@
         width: 100%;
         padding: 0px 12px;
     }
-    .header-logo > img {
+    .header-logo > a > img {
         width: 120px;
         height: auto;
     }
@@ -24,7 +24,7 @@
     }
     .hero-banner-section::before {
         background-position: top;
-        filter: blur(2px);
+        filter: blur(1.06px);
         background-repeat: no-repeat;
         background-image: url('../images/mobile-bg.png'); 
     }
@@ -203,4 +203,114 @@
     .review {
         padding: 0px 0px 50px 0px;
     }
+    input {
+        width: calc(100% - 0px) !important;
+    }
+    .form-container button {
+        width: calc(100% - 0px) !important;
+    }
+    .checkbox {
+        padding: 0px;
+    }
+    input#terms {
+        width: 30px !important;
+    }
+    small {
+        padding: 0px;
+    }
+    .winner-white-btn {
+        min-width: fit-content;
+    }
+}
+@media only screen and (max-width: 868px) and (min-width: 601px) {
+    .container {
+        width: 96%;
+    }
+    .header-context > h1 {
+        font-size: 58px;
+        line-height: 68px;
+        padding-bottom: 25px;
+    }
+    .header-context > p {
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .header-context > p.second-p {
+        font-size: 19px;
+    }
+    .header-context {
+        padding: 90px 0px;
+    }
+    .hero-banner-section::before {
+        filter: blur(4px);
+    }
+    .about-context > h2 {
+        font-size: 34px;
+        padding-bottom: 12px;
+    }
+    .service-card > h3 {
+        font-size: 18px;
+    }
+    .service-card {
+        padding: 0px 5px;
+    }
+    .service-card-flex {
+        padding: 30px 0px;
+    }
+    .service-card > p {
+        font-size: 15px;
+        padding: 10px 5px;
+    }
+    .announcment-time {
+        width: 30%;
+    }
+    .announcment-time > h2 {
+        font-size: 60px;
+        line-height: 32px;
+        padding: 30px 0px 10px 0px;
+    }
+    .count-time-area {
+        padding: 20px 0px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .count-flex {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        justify-content: center;
+    }
+    .winner-context > h2 {
+        font-size: 34px;
+        line-height: 32px;
+        padding: 0px 0px 10px 0px;
+    }
+    .winner-context > h3 {
+        font-size: 18px;
+        line-height: 26px;
+        padding: 5px 0px;
+    }
+    .winner-context > p {
+        font-size: 16px;
+        line-height: normal;
+        padding: 5px 0px 20px 0px;
+    }
+    .result-card > h2 {
+        font-size: 24px;
+    }
+    .result-card {
+        padding: 28px 10px;
+    }
+    .result-card > p {
+        min-height: 60px;
+        font-size: 17px;
+        line-height: normal;
+        padding: 5px 0px 15px 0px;
+    }
+    .container {
+        width: 100%;
+        padding: 0px 15px;
+    }
+}
+@media only screen and (max-width: 1024px) and (min-width: 869px) {
 }

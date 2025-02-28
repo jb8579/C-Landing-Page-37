@@ -4,21 +4,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Oz Lotto - Play & Win Big Online</title>
-        <meta name="description" content="Play Oz Lotto online at ozlotto.com. Get the latest results, jackpot updates, and secure your chance to win big. Join now for exciting lottery draws!">
+        <meta name="description" content="Play Oz Lotto online at aulottoozgame.com. Get the latest results, jackpot updates, and secure your chance to win big. Join now for exciting lottery draws!">
         <meta name="keywords" content="Oz Lotto, play Oz Lotto, Oz Lotto results, Australian lottery, lottery jackpot, online lotto, buy lotto tickets">
         <meta name="author" content="Oz Lotto">
         <meta name="robots" content="index, follow">
         <meta property="og:title" content="Oz Lotto - Play & Win Big Online">
         <meta property="og:description" content="Join Oz Lotto and win big! Get the latest results and jackpot updates online.">
-        <meta property="og:image" content="https://ozlotto.com/og-image.jpg">
-        <meta property="og:url" content="https://ozlotto.com">
+        <meta property="og:image" content="https://aulottoozgame.com/og-image.jpg">
+        <meta property="og:url" content="https://aulottoozgame.com">
         <meta property="og:type" content="website">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Oz Lotto - Play & Win Big Online">
         <meta name="twitter:description" content="Check out Oz Lotto for the latest results, jackpots, and online lottery gaming.">
-        <meta name="twitter:image" content="https://ozlotto.com/twitter-image.jpg">
-        <link rel="canonical" href="https://ozlotto.com">
-        <link rel="icon" href="https://ozlotto.com/favicon.ico" type="image/x-icon">
+        <meta name="twitter:image" content="https://aulottoozgame.com/twitter-image.jpg">
+        <link rel="canonical" href="https://aulottoozgame.com">
+        <link rel="icon" href="images/fav-icon.png" type="image/x-icon">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +35,9 @@
                 <div class="container">
                     <div class="header-menu-flex">
                         <div class="header-logo">
-                            <img src="images/OZ-LOTTO-Logo.png" alt="OZ LOTTO Logo">
+                            <a href="/">
+                                <img src="images/OZ-LOTTO-Logo.png" alt="OZ LOTTO Logo">
+                            </a>
                         </div>
                         <div class="header-buttons">
                             <a href="javascript:void(0);" onclick="showLoginForm()">
@@ -49,207 +51,208 @@
                 </div>
             </div>
         </header>
-
-        <section class="form-bg">
-            <div class="form-container" id="loginForm">
-                <h2 class="form-title">Login</h2>
-                <input type="email" id="email" placeholder="Enter email" required>
-                <input type="password" id="password" placeholder="Enter password" required>
-                <button id="loginBtn">Login</button>
-                <p><a href="javascript:void(0);" onclick="showForgotPasswordForm()">Forgot Password?</a></p>
-            </div>
+        <main>
+            <section class="form-bg">
+                <div class="form-container" id="loginForm">
+                    <h2 class="form-title">Login</h2>
+                    <input type="email" id="email" placeholder="Enter email" required>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                    <button id="loginBtn">Login</button>
+                    <p><a href="javascript:void(0);" onclick="showForgotPasswordForm()">Forgot Password?</a></p>
+                </div>
+        
+                <div class="form-container hidden" id="forgotPasswordForm">
+                    <h2 class="form-title">Reset Password</h2>
+                    <input type="email" id="resetEmail" placeholder="Enter your email" required>
+                    <button id="resetBtn">Reset Password</button>
+                    <button id="backToLogin" onclick="showLoginForm()">Back to Login</button>
+                </div>
+                <style>
+                    .form-bg{
+                        background: linear-gradient(137deg, #FFF -38.77%, #06A150 173.8%);
+                        padding: 60px 0px;
+                    }
+                    .form-container {
+                        background: white;
+                        padding: 20px;
+                        border-radius: 30px;
+                        width: 450px;
+                        text-align: center;
+                        margin: 0px auto;
+                    }
+                    .form-title {
+                        color: #000;
+                        font-size: 34px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        text-transform: uppercase;
+                        padding-bottom: 15px;
+                    }
+                    input {
+                        width: calc(100% - 20px);
+                        padding: 17px 18px;
+                        margin: 10px 0;
+                        border: 0px;
+                        color: rgba(0, 0, 0, 0.50);
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        border-radius: 8px;
+                        background: rgba(0, 0, 0, 0.04);
+                    }
+                    input#terms {
+                        width: 30px;
+                    }
+                    small {
+                        display: block;
+                        font-size: 12px;
+                        color: gray;
+                        margin-bottom: 12px;
+                        padding: 0px 17px;
+                        text-align: left;
+                    }
+                    .checkbox {
+                        display: flex;
+                        align-items: baseline;
+                        font-size: 14px;
+                        margin: 10px 0 20px 0px;
+                        text-align: left;
+                        padding: 0px 17px;
+                        color: rgba(0, 0, 0, 0.80);
+                        font-family: Poppins;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20px;
+                    }
+                    .checkbox input {
+                        margin-right: 8px;
+                        position: relative;
+                        top: 2px;
+                    }
+                    .form-container button {
+                        width: calc(100% - 20px);
+                        padding: 16px;
+                        border-radius: 8px;
+                        background: #06A150;
+                        border: none;
+                        cursor: pointer;
+                        color: #FFF;
+                        text-align: center;
+                        font-family: Poppins;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                        transition: background 0.3s;
+                        margin: 12px 0px 30px 0px;
+                    }
+                    .form-container button#resetBtn{
+                        margin-bottom: 15px !important;
+                    }
+                    .form-container button#backToLogin{
+                        background: #e6e7e6 !important;
+                        color: #000000 !important;
+                        margin: 0px !important;
+                    }
+                    .form-container button:hover {
+                        background: #03964a;
+                    }
+                    .login-link {
+                        margin: 30px 0px 15px 0px;
+                        color: #000;
+                        text-align: center;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 22px; 
+                    }
+                    .login-link a {
+                        color: #0088A8;
+                        text-decoration: underline;
+                        font-weight: 400;
+                    }
+                    .login-link a:hover {
+                        color: #05718a;
+                    }
+                    .hidden{
+                        display: none;
+                    }
+                </style>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const loginForm = document.getElementById("loginForm");
+                        const forgotPasswordForm = document.getElementById("forgotPasswordForm");
+                        const emailInput = document.getElementById("email");
+                        const passwordInput = document.getElementById("password");
+                        const loginButton = document.getElementById("loginBtn");
+                        const resetEmailInput = document.getElementById("resetEmail");
+                        const resetButton = document.getElementById("resetBtn");
     
-            <div class="form-container hidden" id="forgotPasswordForm">
-                <h2 class="form-title">Reset Password</h2>
-                <input type="email" id="resetEmail" placeholder="Enter your email" required>
-                <button id="resetBtn">Reset Password</button>
-                <button id="backToLogin" onclick="showLoginForm()">Back to Login</button>
-            </div>
-            <style>
-                .form-bg{
-                    background: linear-gradient(137deg, #FFF -38.77%, #06A150 173.8%);
-                    padding: 60px 0px;
-                }
-                .form-container {
-                    background: white;
-                    padding: 20px;
-                    border-radius: 30px;
-                    width: 450px;
-                    text-align: center;
-                    margin: 0px auto;
-                }
-                .form-title {
-                    color: #000;
-                    font-size: 34px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: normal;
-                    text-transform: uppercase;
-                    padding-bottom: 15px;
-                }
-                input {
-                    width: calc(100% - 20px);
-                    padding: 17px 18px;
-                    margin: 10px 0;
-                    border: 0px;
-                    color: rgba(0, 0, 0, 0.50);
-                    font-family: Poppins;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    border-radius: 8px;
-                    background: rgba(0, 0, 0, 0.04);
-                }
-                input#terms {
-                    width: 30px;
-                }
-                small {
-                    display: block;
-                    font-size: 12px;
-                    color: gray;
-                    margin-bottom: 12px;
-                    padding: 0px 17px;
-                    text-align: left;
-                }
-                .checkbox {
-                    display: flex;
-                    align-items: baseline;
-                    font-size: 14px;
-                    margin: 10px 0 20px 0px;
-                    text-align: left;
-                    padding: 0px 17px;
-                    color: rgba(0, 0, 0, 0.80);
-                    font-family: Poppins;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 20px;
-                }
-                .checkbox input {
-                    margin-right: 8px;
-                    position: relative;
-                    top: 2px;
-                }
-                .form-container button {
-                    width: calc(100% - 20px);
-                    padding: 16px;
-                    border-radius: 8px;
-                    background: #06A150;
-                    border: none;
-                    cursor: pointer;
-                    color: #FFF;
-                    text-align: center;
-                    font-family: Poppins;
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 20px;
-                    text-transform: uppercase;
-                    transition: background 0.3s;
-                    margin: 12px 0px 30px 0px;
-                }
-                .form-container button#resetBtn{
-                    margin-bottom: 15px !important;
-                }
-                .form-container button#backToLogin{
-                    background: #e6e7e6 !important;
-                    color: #000000 !important;
-                    margin: 0px !important;
-                }
-                .form-container button:hover {
-                    background: #03964a;
-                }
-                .login-link {
-                    margin: 30px 0px 15px 0px;
-                    color: #000;
-                    text-align: center;
-                    font-size: 15px;
-                    font-style: normal;
-                    font-weight: 300;
-                    line-height: 22px; 
-                }
-                .login-link a {
-                    color: #0088A8;
-                    text-decoration: underline;
-                    font-weight: 400;
-                }
-                .login-link a:hover {
-                    color: #05718a;
-                }
-                .hidden{
-                    display: none;
-                }
-            </style>
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    const loginForm = document.getElementById("loginForm");
-                    const forgotPasswordForm = document.getElementById("forgotPasswordForm");
-                    const emailInput = document.getElementById("email");
-                    const passwordInput = document.getElementById("password");
-                    const loginButton = document.getElementById("loginBtn");
-                    const resetEmailInput = document.getElementById("resetEmail");
-                    const resetButton = document.getElementById("resetBtn");
-
-                    // Handle Login
-                    loginButton.addEventListener("click", function (event) {
-                        event.preventDefault();
-
-                        const email = emailInput.value.trim();
-                        const password = passwordInput.value.trim();
-
-                        if (!email || !password) {
-                            alert("Please enter both email and password.");
-                            return;
-                        }
-
-                        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                        if (!emailPattern.test(email)) {
-                            alert("Please enter a valid email address.");
-                            return;
-                        }
-
-                        if (password.length < 6) {
-                            alert("Password must be at least 6 characters long.");
-                            return;
-                        }
-
-                        alert("Login successful!");
-                        window.location.href = "index.html";
+                        // Handle Login
+                        loginButton.addEventListener("click", function (event) {
+                            event.preventDefault();
+    
+                            const email = emailInput.value.trim();
+                            const password = passwordInput.value.trim();
+    
+                            if (!email || !password) {
+                                alert("Please enter both email and password.");
+                                return;
+                            }
+    
+                            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                            if (!emailPattern.test(email)) {
+                                alert("Please enter a valid email address.");
+                                return;
+                            }
+    
+                            if (password.length < 6) {
+                                alert("Password must be at least 6 characters long.");
+                                return;
+                            }
+    
+                            alert("Login successful!");
+                            window.location.href = "index.html";
+                        });
+    
+                        // Show Forgot Password Form
+                        window.showForgotPasswordForm = function () {
+                            loginForm.classList.add("hidden");
+                            forgotPasswordForm.classList.remove("hidden");
+                        };
+    
+                        // Handle Password Reset
+                        resetButton.addEventListener("click", function (event) {
+                            event.preventDefault();
+    
+                            const resetEmail = resetEmailInput.value.trim();
+                            if (!resetEmail) {
+                                alert("Please enter your email.");
+                                return;
+                            }
+    
+                            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                            if (!emailPattern.test(resetEmail)) {
+                                alert("Please enter a valid email address.");
+                                return;
+                            }
+    
+                            alert("A password reset link has been sent to your email.");
+                        });
+    
+                        // Back to Login
+                        window.showLoginForm = function () {
+                            forgotPasswordForm.classList.add("hidden");
+                            loginForm.classList.remove("hidden");
+                        };
                     });
-
-                    // Show Forgot Password Form
-                    window.showForgotPasswordForm = function () {
-                        loginForm.classList.add("hidden");
-                        forgotPasswordForm.classList.remove("hidden");
-                    };
-
-                    // Handle Password Reset
-                    resetButton.addEventListener("click", function (event) {
-                        event.preventDefault();
-
-                        const resetEmail = resetEmailInput.value.trim();
-                        if (!resetEmail) {
-                            alert("Please enter your email.");
-                            return;
-                        }
-
-                        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                        if (!emailPattern.test(resetEmail)) {
-                            alert("Please enter a valid email address.");
-                            return;
-                        }
-
-                        alert("A password reset link has been sent to your email.");
-                    });
-
-                    // Back to Login
-                    window.showLoginForm = function () {
-                        forgotPasswordForm.classList.add("hidden");
-                        loginForm.classList.remove("hidden");
-                    };
-                });
-            </script>
-        </section>
+                </script>
+            </section>
+        </main>
         <footer>
             <div class="container">
                 <div class="brand-logos">
