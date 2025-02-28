@@ -1,0 +1,206 @@
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 0px 12px;
+    }
+    .header-logo > img {
+        width: 120px;
+        height: auto;
+    }
+    .header-buttons {
+        gap: 6px;
+    }
+    .header-menu {
+        padding: 8px 0px;
+    }
+    .log-in-btn,
+    .register-btn {
+        padding: 8px 10px;
+        min-width: 90px;
+        font-size: 14px;
+    }
+    .header-context {
+        padding: 50px 0px;
+    }
+    .hero-banner-section::before {
+        background-position: top;
+        filter: blur(2px);
+        background-repeat: no-repeat;
+        background-image: url('../images/mobile-bg.png'); 
+    }
+    .header-context > h1 {
+        font-size: 35px;
+        line-height: 32px;
+        padding-bottom: 18px;
+    }
+    .header-context > p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .header-context > p.second-p {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 8px 0px 20px 0px;
+    }
+    .age-restriction-top-bar > p {
+        font-size: 12px;
+    }
+    .age-restriction-top-bar > p > img {
+        top: 7px;
+    }
+    .about-context {
+        padding: 30px 20px;
+    }
+    .about-context > h2 {
+        font-size: 26px;
+        line-height: 40px;
+        padding-bottom: 5px;
+    }
+    .service-card-flex {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 20px;
+    }
+    .service-card:nth-child(1), .service-card:nth-child(2) {
+        border-bottom: 1px solid #C7C7C7;
+        border-right: 0px;
+        padding: 30px 0px 30px 0px;
+    }
+    .service-card:nth-child(3) {
+        padding: 30px 0px 30px 0px;
+    }
+    .service-card > h3 {
+        font-size: 22px;
+        padding-top: 12px;
+    }
+    .winner-flex {
+        display: flex;
+        gap: 0px;
+        padding: 40px 20px;
+        flex-direction: column;
+    }
+    .announcment-time > h2 {
+        font-size: 60px;
+        line-height: 32px;
+        padding: 30px 0px 8px 0px;
+    }
+    .winner-context > h2 {
+        font-size: 30px;
+        line-height: 28px;
+        padding: 15px 0px;
+    }
+    .winner-context > h3 {
+        font-size: 18px;
+        line-height: 26px;
+        padding: 5px 0px;
+    }
+    .winner-context > p {
+        font-size: 15px;
+        line-height: 24px;
+        padding: 5px 0px 20px 0px;
+    }
+    .announcment-time {
+        text-align: center;
+        width: 100%;
+    }
+    .review-title {
+        font-size: 30px;
+        line-height: 34px;
+        padding-bottom: 40px;
+    }
+    .review-slider {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 18px;
+    }
+    .result-card-flex {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 18px;
+    }
+    .result-card > h2 {
+        padding: 15px 0px 5px 0px;
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .result-card > h2 {
+        padding: 15px 0px 5px 0px;
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .lotto-win-number > span {
+        width: 26px;
+        height: 26px;
+        padding: 10px;
+        margin: 6px 2px;
+        flex-shrink: 0;
+        font-size: 13px;
+    }
+    .result-card {
+        padding: 28px 0px;
+    }
+    .result-card > p {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 5px 0px 15px 0px;
+    }
+    .faq-title {
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+    .faq {
+        padding: 40px 0px;
+    }
+    .faq-question {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .brand-logos > ul > li > a > img {
+        max-width: 80px;
+    }
+    .brand-logos > ul {
+        display: inline-flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-text > p {
+        font-size: 15px;
+        padding: 30px 0px;
+    }
+    .footer-link > ul {
+        list-style: none;
+        display: inline-flex;
+        gap: 14px;
+        padding-bottom: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .form-container {
+        max-width: 100%;
+    }
+    .form-bg {
+        padding: 40px 15px !important;
+    }
+    .form-title {
+        font-size: 30px !important;
+        padding-bottom: 10px !important;
+    }
+    .subpage-title {
+        font-size: 34px;
+        line-height: 28px;
+        padding-bottom: 30px;
+    }
+    .sub-page {
+        padding: 40px 0px;
+    }
+    .service {
+        padding: 40px 0px;
+    }
+    .winner {
+        padding: 40px 0px 60px 0px;
+    }
+    .review {
+        padding: 0px 0px 50px 0px;
+    }
+}
