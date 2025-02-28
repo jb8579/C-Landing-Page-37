@@ -222,6 +222,13 @@
         min-width: fit-content;
     }
 }
+@media only screen and (max-width: 360px) and (min-width: 300px){
+    .header-context > h1 {
+        font-size: 30px;
+        line-height: normal;
+        padding-bottom: 8px;
+    }
+}
 @media only screen and (max-width: 868px) and (min-width: 601px) {
     .container {
         width: 96%;
