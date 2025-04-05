@@ -7,6 +7,9 @@ body{
     background: linear-gradient(132deg, #FFF 4.43%, #06A150 100.12%);
     font-family: "Poppins", serif;
 }
+a{
+    cursor: pointer;
+}
 .container{
     width: 84%;
     max-width: 1365px;
